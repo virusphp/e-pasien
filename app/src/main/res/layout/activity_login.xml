@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/bground"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="84dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/logo"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawableStart="@mipmap/account"
+                    android:drawablePadding="7dp"
+                    android:ems="7"
+                    android:hint="User ID"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:textColor="#FFF"
+                    android:textColorHint=" #BDC3C7"
+                    android:textColorLink="#FFF" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="64dp"
+                    android:drawableStart="@mipmap/lock"
+                    android:drawablePadding="7dp"
+                    android:ems="7"
+                    android:hint="Password"
+                    android:inputType="numberPassword"
+                    android:paddingStart="0dp"
+                    android:textColor="#FFF"
+                    android:textColorHint=" #BDC3C7"
+                    android:textColorLink="#FFF" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="248dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ripple_btn"
+                    android:text="Login"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.NotificationFragment">
+
+        <LinearLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/content_slider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorMenu"
+                    android:drawableTop="@mipmap/ic_menu_1"
+                    android:paddingTop="10dp"
+                    android:text="Pendaftaran Online"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_antrian"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/btn_register"
+                    android:background="@color/colorMenu"
+                    android:drawableTop="@mipmap/ic_menu_2"
+                    android:paddingTop="10dp"
+                    android:text="Antrian"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_history"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/btn_register"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorMenu"
+                    android:drawableTop="@mipmap/ic_menu_3"
+                    android:paddingTop="10dp"
+                    android:text="Riwayat Kesehatan"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_04"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/btn_antrian"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/btn_history"
+                    android:background="@color/colorMenu"
+                    android:drawableTop="@mipmap/ic_menu_4"
+                    android:paddingTop="10dp"
+                    android:text="Cek BPJS"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+ </ScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pastikan anda sudah melengkapi data nomor handphone, untuk kelancaran proses registrasi rawat jalan"
+                android:textSize="14sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edt_notelp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:enabled="true"
+                    android:hint="No. Handphone"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tglperiksa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edt_tglperiksa"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal Periksa"
+                    android:inputType="date"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_poli"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dokter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edt_dokter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Dokter"
+                    android:enabled="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_jnspasien"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Daftar" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
